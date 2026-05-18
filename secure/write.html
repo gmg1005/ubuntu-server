@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<form action="write.php" method="POST" enctype="multipart/form-data">
+<meta charset="UTF-8">
+<head>
+<title>게시글 작성</title>
+   
+</head>
+<body>
+
+    <h3>게시글 작성 (보안 테스트용)</h3>
+
+    <div>
+        <label for="title">제목:</label><br>
+        <input type="text" id="title" name="title" style="width:100%;" placeholder="제목을 입력하세요">
+    </div>
+
+    <br>
+
+    <div>
+        <label for="content">내용:</label><br>
+        <textarea id="content" name="content" rows="10" style="width:100%;" placeholder="내용을 입력하세요"></textarea>
+    </div>
+
+    <br>
+
+    <div>
+        <label for="file">파일 첨부:</label><br>
+        <input type="file" id="file" name="userfile">
+    </div>
+
+    <hr>
+
+    <button type="submit">게시글 등록</button>
+
+</form>
+<br>
+<button onclick="history.back()">
+뒤로가기
+</button>
+
+</body>
