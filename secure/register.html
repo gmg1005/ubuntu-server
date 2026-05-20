@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <title>회원가입</title>
 </head>
 
 <body>
-
+<div class="form-container">
 <h2>회원가입</h2>
 
 <form method="POST" action="register.php">
-
+<div class="form-group">
 아이디: <input type="text" name="username"><br><br>
-
+</div>
+<div class="form-group">
 비밀번호: <input type="password" name="password"><br><br>
-
-<input type="submit" value="회원가입">
+</div>
+<input type="submit" value="회원가입" class="submit-btn">
 
 </form>
 <br>
-
-<button onclick="history.back()">
+<button class="submit-btn" onclick="history.back()">
 뒤로가기
 </button>
-
+</div>
 </body>
 </html>
