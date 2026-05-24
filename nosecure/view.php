@@ -8,23 +8,33 @@ $conn = new mysqli(
 );
 
 $id = $_GET['id'];
-
 $sql = "SELECT * FROM board WHERE id=$id";
-
 $result = $conn->query($sql);
-
 $row = $result->fetch_assoc();
 
 ?>
 
-<h2><?php echo $row['title']; ?></h2>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시글 보기</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+<div class="form-container theme-vulnerable">
+<h2> <?php echo $row['title']; ?> </h2>
 <hr>
-
+<div class="form-group">
 <?php echo $row['content']; ?>
-
+<br><br>
+<img src="uploads/<?php echo $row['filename']; ?>" width="300">
+</div>
 <hr>
-
-<button onclick="history.back()">
+<button class="submit-btn btn-vulnerable" onclick="history.back()">
 뒤로가기
 </button>
+</div>
+</body>
+</html>

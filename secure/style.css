@@ -70,3 +70,65 @@ body {
     .submit-btn {
 	margin-top: 10px;
     }
+    /* 기본 공통 버튼 스타일 */
+.btn-custom {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%; /* 부모 박스에 맞게 꽉 차도록 */
+}
+
+/* 🔴 취약 사이트 전용 - 레드 테마 */
+.theme-vulnerable {
+    border: 1px solid #e0a3a3;
+    background-color: #fff5f5;
+}
+.theme-vulnerable .panel-header {
+    background-color: #dc3545; /* 진한 빨간색 헤더 */
+    color: white;
+}
+.badge-vulnerable {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.btn-vulnerable {
+    background-color: #dc3545;
+    color: white;
+}
+.btn-vulnerable:hover {
+    background-color: #bd2130;
+}
+
+/* 🟢 보안 사이트 전용 - 초록 테마 (지우님 버전 반영) */
+.theme-secure {
+    border: 1px solid #a3d9a5;
+    background-color: #f7fdf8;
+}
+.theme-secure .panel-header {
+    background-color: #198754; /* 지우님이 쓴 진한 초록색 헤더 */
+    color: white;
+}
+.badge-secure {
+    background-color: #198754;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.btn-secure {
+    background-color: #198754;
+    color: white;
+}
+.btn-secure:hover {
+    background-color: #146c43;
+}
